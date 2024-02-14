@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  strk_drop_checker:
+    build: .
+    volumes:
+      - ./wallets.txt:/usr/src/app/wallets.txt
+      - ./eligible_wallets.json:/usr/src/app/eligible_wallets.json
+
